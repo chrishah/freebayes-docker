@@ -9,7 +9,7 @@ In detail, the image is set up with:
 
 To run freebayes you can do the following (this will mount the directory `/in` of the container to the current working directory on your local machine, and allow you to access files in this directory and any sub-directories):
 ```bash
-$ docker run --rm -v $(pwd):/home/in -w /in chrishah/freebayes:v1.2.0-10-g8a0dbee freebayes -h
+$ docker run --rm -v $(pwd):/in -w /in chrishah/freebayes:v1.2.0-10-g8a0dbee freebayes -h
 ```
 
 You can also enter the container environment and work within it. All executables should be in the `PATH`.
